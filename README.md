@@ -1,0 +1,1 @@
+## Microservice para cadatrar e gerenciar cooperativas
