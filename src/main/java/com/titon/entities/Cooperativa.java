@@ -12,6 +12,9 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.GenericGenerator;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonFormat.Shape;
+
 @Entity
 @Table(name = "cooperativa")
 public class Cooperativa {
@@ -42,6 +45,7 @@ public class Cooperativa {
     @Size(max = 100)
     private String representante;
 
+    @JsonFormat(pattern = "yyyy-MM-dd", shape = Shape.STRING)
     @Column(name = "datacriacao")
     private Date dataCriacao;
 
