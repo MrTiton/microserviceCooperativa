@@ -52,7 +52,7 @@ public class CooperativaService {
 		}
 	}
 	
-	@DeleteMapping
+	@DeleteMapping("/{id}")
 	public @ResponseBody ResponseModel delete (@PathVariable("id") Long id) {
 		try {
 			this.cooperativaRepository.deleteById(id);
